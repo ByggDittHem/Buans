@@ -1,0 +1,547 @@
+/* =====================================
+   BUAN
+   Style v1.0
+===================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:"Segoe UI",Arial,Helvetica,sans-serif;
+    color:#2f2f2f;
+    background:#ffffff;
+    line-height:1.7;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:1000;
+    background:rgba(255,255,255,.95);
+    backdrop-filter:blur(8px);
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+header .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+.logo img{
+    height:70px;
+}
+
+nav ul{
+    display:flex;
+    gap:40px;
+    list-style:none;
+}
+
+nav a{
+    text-decoration:none;
+    color:#333;
+    font-weight:600;
+    transition:.25s;
+}
+
+nav a:hover{
+    color:#8B6B3E;
+}
+
+#hero{
+    height:100vh;
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+}
+
+.hero-image{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+#hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.45);
+    z-index:1;
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    text-align:center;
+    color:#fff;
+    width:min(800px,90%);
+}
+
+.hero-content h1{
+    font-size:clamp(42px,6vw,72px);
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:22px;
+    margin-bottom:40px;
+}
+
+.button{
+    display:inline-block;
+    background:#8B6B3E;
+    color:#fff;
+    text-decoration:none;
+    padding:18px 42px;
+    border-radius:40px;
+    font-weight:700;
+    transition:.3s;
+}
+
+.button:hover{
+    background:#6f552f;
+    transform:translateY(-3px);
+}
+/* =====================================
+   SEKTIONSLAYOUT
+===================================== */
+
+section{
+
+    padding:110px 0;
+
+}
+
+section h2{
+
+    text-align:center;
+
+    font-size:42px;
+
+    margin-bottom:25px;
+
+    color:#2c2c2c;
+
+}
+
+section p{
+
+    font-size:18px;
+
+}
+
+/* =====================================
+   ABOUT
+===================================== */
+
+#about{
+
+    background:#ffffff;
+
+}
+
+#about p{
+
+    max-width:900px;
+
+    margin:0 auto;
+
+    text-align:center;
+
+    font-size:20px;
+
+    color:#555;
+
+}
+
+/* =====================================
+   FÖRDELAR
+===================================== */
+
+#advantages{
+
+    background:#f7f7f7;
+
+}
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:35px;
+
+    margin-top:50px;
+
+}
+
+.card{
+
+    background:#ffffff;
+
+    border-radius:18px;
+
+    padding:40px 30px;
+
+    box-shadow:0 10px 35px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.12);
+
+}
+
+.card h3{
+
+    margin-bottom:18px;
+
+    font-size:26px;
+
+    color:#8B6B3E;
+
+}
+
+.card p{
+
+    color:#666;
+
+}
+
+/* =====================================
+   GALLERI
+===================================== */
+
+#gallery{
+
+    background:#ffffff;
+
+}
+
+.gallery{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:25px;
+
+    margin-top:45px;
+
+}
+
+.gallery img{
+
+    width:100%;
+
+    height:280px;
+
+    object-fit:cover;
+
+    border-radius:18px;
+
+    transition:.3s;
+
+    cursor:pointer;
+
+}
+
+.gallery img:hover{
+
+    transform:scale(1.03);
+
+}
+/* =====================================
+   KONTAKT
+===================================== */
+
+#contact{
+
+    background:#f7f4ef;
+
+    text-align:center;
+
+}
+
+#contact p{
+
+    max-width:700px;
+
+    margin:0 auto 35px;
+
+    color:#555;
+
+    font-size:20px;
+
+}
+
+#contact .button{
+
+    font-size:18px;
+
+}
+
+/* =====================================
+   FOOTER
+===================================== */
+
+footer{
+
+    background:#222;
+
+    color:#ffffff;
+
+    padding:35px 0;
+
+    text-align:center;
+
+}
+
+footer p{
+
+    font-size:15px;
+
+    opacity:.8;
+
+}
+
+/* =====================================
+   ENKLA ANIMATIONER
+===================================== */
+
+.button,
+.card,
+.gallery img{
+
+    transition:all .3s ease;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.gallery img:hover{
+
+    transform:scale(1.03);
+
+}
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+@media (max-width: 992px){
+
+    header .container{
+
+        flex-direction:column;
+
+        gap:20px;
+
+        padding:20px 0;
+
+    }
+
+    nav ul{
+
+        gap:20px;
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+    }
+
+    .hero-content h1{
+
+        font-size:52px;
+
+    }
+
+    .hero-content p{
+
+        font-size:20px;
+
+    }
+
+}
+
+@media (max-width: 768px){
+
+    section{
+
+        padding:80px 0;
+
+    }
+
+    section h2{
+
+        font-size:34px;
+
+    }
+
+    .hero-content h1{
+
+        font-size:40px;
+
+    }
+
+    .hero-content p{
+
+        font-size:18px;
+
+    }
+
+    .button{
+
+        width:100%;
+
+        max-width:320px;
+
+        text-align:center;
+
+        padding:16px 24px;
+
+    }
+
+    .gallery{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+@media (max-width: 480px){
+
+    .logo img{
+
+        height:55px;
+
+    }
+
+    nav ul{
+
+        flex-direction:column;
+
+        gap:12px;
+
+    }
+
+    .hero-content h1{
+
+        font-size:32px;
+
+    }
+
+    .hero-content p{
+
+        font-size:16px;
+
+    }
+
+}
+/* =====================================
+   MOBILMENY
+===================================== */
+
+.menu-toggle{
+
+    display:none;
+
+    background:none;
+
+    border:none;
+
+    font-size:34px;
+
+    cursor:pointer;
+
+    color:#333;
+
+}
+
+@media (max-width:900px){
+
+    .menu-toggle{
+
+        display:block;
+
+    }
+
+    nav{
+
+        position:absolute;
+
+        top:100%;
+
+        left:0;
+
+        width:100%;
+
+        background:white;
+
+        display:none;
+
+        box-shadow:0 10px 30px rgba(0,0,0,.12);
+
+    }
+
+    nav.open{
+
+        display:block;
+
+    }
+
+    nav ul{
+
+        flex-direction:column;
+
+        gap:0;
+
+    }
+
+    nav li{
+
+        border-bottom:1px solid #ececec;
+
+    }
+
+    nav a{
+
+        display:block;
+
+        padding:18px 25px;
+
+    }
+
+}
