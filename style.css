@@ -16,10 +16,6 @@ body{font-family:"Segoe UI",Arial,Helvetica,sans-serif;color:#2f2f2f;background:
 .button{display:inline-block;padding:15px 36px;border-radius:999px;background:#9a7440;color:#fff;text-decoration:none;font-size:17px;font-weight:700}
 .button:hover{background:#79592f}
 
-/* HUS-EXEMPEL */
-#house-example{padding:28px 0 34px;background:#fff;text-align:center}
-.house-example{max-width:900px;margin:0 auto;color:#555;font-size:18px;line-height:1.65}
-.house-example::first-line{font-weight:600;color:#333}
 
 /* LÄGET */
 #location{padding:78px 0 84px;background:#f7f4ef}
@@ -54,4 +50,49 @@ body{font-family:"Segoe UI",Arial,Helvetica,sans-serif;color:#2f2f2f;background:
 .location-list{padding:23px 20px}
 .location-item{font-size:16px}
 #preliminary p{padding:22px 20px;font-size:17px}
+}
+
+/* HUS-EXEMPEL – LITEN TEXT I HERO */
+.house-example-corner {
+  position: absolute;
+  left: 5%;
+  bottom: 28px;
+  z-index: 4;
+  width: min(470px, 42%);
+  padding: 12px 16px;
+  color: rgba(255,255,255,.94);
+  background: rgba(0,0,0,.28);
+  border-left: 3px solid #9a7440;
+  border-radius: 0 8px 8px 0;
+  font-size: 14px;
+  line-height: 1.45;
+  text-align: left;
+  text-shadow: 0 1px 5px rgba(0,0,0,.45);
+}
+
+.house-example-corner strong,
+.house-example-corner span {
+  display: block;
+}
+
+.house-example-corner strong {
+  margin-bottom: 2px;
+}
+
+/* GOLF – Font Awesome */
+.location-item .golf-icon {
+  flex: 0 0 auto;
+  width: 26px;
+  font-size: 24px;
+  color: #9a7440;
+}
+
+@media(max-width:700px){
+  .house-example-corner {
+    left: 5%;
+    bottom: 18px;
+    width: 90%;
+    padding: 9px 12px;
+    font-size: 12px;
+  }
 }
