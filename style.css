@@ -303,3 +303,16 @@ section h2 {
     font-size: 17px;
   }
 }
+
+
+/* FINAL LOGO OVERRIDE */
+header img.logo,
+header .logo img,
+img.logo {
+  display: block !important;
+  width: 150px !important;
+  max-width: 150px !important;
+  height: auto !important;
+  max-height: 86px !important;
+  object-fit: contain !important;
+}
