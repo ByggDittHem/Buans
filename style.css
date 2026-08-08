@@ -173,3 +173,52 @@ body{font-family:"Segoe UI",Arial,Helvetica,sans-serif;color:#2f2f2f;background:
     font-size: 11px;
   }
 }
+
+/* FINAL HERO HOUSE-EXAMPLE POSITION */
+#hero .house-example-corner {
+  position: absolute !important;
+  left: 4% !important;
+  bottom: 22px !important;
+  z-index: 5 !important;
+  width: min(430px, 38%) !important;
+  padding: 9px 13px !important;
+  margin: 0 !important;
+  color: rgba(255,255,255,.94) !important;
+  background: rgba(0,0,0,.30) !important;
+  border-left: 3px solid #9a7440 !important;
+  border-radius: 0 7px 7px 0 !important;
+  font-size: 12px !important;
+  line-height: 1.35 !important;
+  text-align: left !important;
+  text-shadow: 0 1px 5px rgba(0,0,0,.5) !important;
+}
+#hero .house-example-corner strong,
+#hero .house-example-corner span {
+  display: block !important;
+}
+#hero .house-example-corner strong {
+  margin-bottom: 2px !important;
+}
+
+/* Golf icon: same gold as every Lucide icon */
+.location-item .golf-icon {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex: 0 0 26px !important;
+  width: 26px !important;
+  height: 26px !important;
+  font-size: 21px !important;
+  line-height: 1 !important;
+  color: #9a7440 !important;
+  -webkit-text-fill-color: #9a7440 !important;
+  filter: none !important;
+}
+@media (max-width:700px) {
+  #hero .house-example-corner {
+    left: 5% !important;
+    bottom: 14px !important;
+    width: 90% !important;
+    font-size: 11px !important;
+  }
+}
