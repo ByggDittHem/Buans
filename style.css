@@ -115,3 +115,61 @@ body{font-family:"Segoe UI",Arial,Helvetica,sans-serif;color:#2f2f2f;background:
     font-size: 11px;
   }
 }
+
+/* FINAL ICON CONSISTENCY */
+.location-item svg,
+.location-item .golf-icon {
+  color: #9a7440 !important;
+  fill: none;
+  stroke: #9a7440 !important;
+}
+
+.location-item .golf-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 26px;
+  width: 26px;
+  height: 26px;
+  font-size: 21px;
+  line-height: 1;
+  color: #9a7440 !important;
+  filter: none !important;
+}
+
+/* House example stays inside the hero, in the lower-left corner. */
+.house-example-corner {
+  position: absolute;
+  left: 4%;
+  bottom: 24px;
+  z-index: 4;
+  width: min(440px, 42%);
+  padding: 10px 14px;
+  color: rgba(255,255,255,.94);
+  background: rgba(0,0,0,.28);
+  border-left: 3px solid #9a7440;
+  border-radius: 0 7px 7px 0;
+  font-size: 13px;
+  line-height: 1.4;
+  text-align: left;
+  text-shadow: 0 1px 5px rgba(0,0,0,.45);
+}
+
+.house-example-corner strong,
+.house-example-corner span {
+  display: block;
+}
+
+.house-example-corner strong {
+  margin-bottom: 2px;
+}
+
+@media(max-width:700px) {
+  .house-example-corner {
+    left: 5%;
+    bottom: 16px;
+    width: 90%;
+    padding: 8px 11px;
+    font-size: 11px;
+  }
+}
