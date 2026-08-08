@@ -36,24 +36,22 @@ header {
 }
 
 header .container {
-  min-height: 86px !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: flex-start !important;
-  padding: 10px 0 !important;
+  min-height: 96px;
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
 }
 
 .logo {
-  display: block !important;
-  width: 150px !important;
-  height: auto !important;
-  max-width: 150px !important;
+  display: block;
+  width: 150px;
+  height: auto;
 }
 
 /* HERO */
 #hero {
   min-height: 100svh;
-  padding-top: 86px;
+  padding-top: 96px;
   position: relative;
   display: flex;
   align-items: center;
@@ -238,8 +236,7 @@ section h2 {
   }
 
   .logo {
-    width: 120px !important;
-    max-width: 120px !important;
+    width: 125px;
   }
 
   #hero {
@@ -304,15 +301,51 @@ section h2 {
   }
 }
 
-
-/* FINAL LOGO OVERRIDE */
-header img.logo,
-header .logo img,
-img.logo {
-  display: block !important;
+/* FINAL ETAPP 2 OVERRIDES */
+.location-columns {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 28px !important;
+  max-width: 980px !important;
+  margin: 0 auto !important;
+}
+.location-list {
+  background: #fff !important;
+  border-radius: 18px !important;
+  padding: 30px !important;
+  box-shadow: 0 8px 28px rgba(0,0,0,.07) !important;
+}
+.location-list h3 {
+  margin-bottom: 20px !important;
+  font-size: 27px !important;
+  color: #8b6b3e !important;
+}
+.location-item {
+  display: flex !important;
+  align-items: center !important;
+  gap: 15px !important;
+  min-height: 58px !important;
+  padding: 12px 0 !important;
+  border-bottom: 1px solid #ece7df !important;
+  font-size: 18px !important;
+  font-weight: 600 !important;
+}
+.hero-logo {
+  position: absolute !important;
+  top: 24px !important;
+  left: 5% !important;
+  z-index: 3 !important;
   width: 150px !important;
   max-width: 150px !important;
   height: auto !important;
   max-height: 86px !important;
-  object-fit: contain !important;
+}
+@media (max-width: 600px) {
+  .location-columns { grid-template-columns: 1fr !important; }
+  .hero-logo {
+    top: 18px !important;
+    left: 6% !important;
+    width: 120px !important;
+    max-width: 120px !important;
+  }
 }
