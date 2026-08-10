@@ -8,17 +8,25 @@
     <meta name="description" content="Villatomt till salu i Enköping med positivt förhandsbesked. Bygg med valfri hustillverkare eller välj ett nyckelfärdigt alternativ.">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
-<link rel="icon" href="images/favicon/favicon.ico">
+    <link rel="icon" href="images/favicon/favicon.ico">
     <link rel="apple-touch-icon" href="images/favicon/apple-touch-icon.png">
     <link rel="manifest" href="images/favicon/site.webmanifest">
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DM8QHWJFB4"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}    
+      function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-DM8QHWJFB4');
     </script>
+<style>
+.hero-info {
+    margin: 0.35rem 0 0.8rem;
+    font-size: 1.15rem;
+    font-weight: 600;
+    line-height: 1.4;
+}
+</style>
 </head>
 <body>
 <section id="hero">
@@ -26,11 +34,10 @@
     <img class="hero-image" src="images/hero.png" alt="Villatomt till salu i Enköping">
     <div class="hero-content">
         <h1>Villatomt till salu i Enköping</h1>
-        <h2>Med positivt förhandsbesked</h2>
-        <p>Bygg med valfri hustillverkare eller välj ett nyckelfärdigt alternativ.</p>
+        <div class="hero-info">Ca 2 000 m² &bull; Positivt förhandsbesked</div>
+        <p>En rymlig villatomt om ca 2 000 m². Bygg med valfri hustillverkare eller välj ett nyckelfärdigt alternativ.</p>
         <a class="button" href="#contact" onclick="gtag('event', 'interest_click', {event_category: 'engagement', event_label: 'interest_form'});">Intresseanmälan</a>
     </div>
-
         <div class="house-example-corner">
             <strong>Bildexemplet visar en av många möjligheter på tomten.</strong>
             <span>Välj själv hustillverkare, husmodell och utformning – här är det du som bestämmer.</span>
@@ -56,7 +63,6 @@
     </div>
   </div>
 </section>
-
 <section id="preliminary">
 <div class="container">
 <h2>Positivt förhandsbesked</h2>
@@ -74,9 +80,9 @@
             Kontakta oss för mer information
             eller för att boka en visning.
         </p>
-
         <a class="button"
-           href="mailto:byggditthem@gmail.com">
+           href="mailto:byggditthem@gmail.com"
+           onclick="gtag('event', 'email_click', {event_category: 'engagement', event_label: 'email_contact'});">
 
             byggditthem@gmail.com
 
